@@ -1,7 +1,8 @@
 # Welcome, Gopher!
 
-To see slides, make sure you have [caddy v1](https://caddyserver.com/v1/)
-and run this:
+This code and the slides are for my talk at [GoWayFest 2020](https://goway.io/).
+
+To see slides, make sure you have [caddy](https://caddyserver.com) installed and run this:
 
 ```console
 $ cd slides
