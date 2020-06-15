@@ -1,4 +1,4 @@
-# Welcome Modules Using Gopher!
+# Welcome, Gopher!
 
 To see slides, make sure you have [caddy v1](https://caddyserver.com/v1/)
 and run this:
