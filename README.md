@@ -6,7 +6,7 @@ To see slides, make sure you have [caddy](https://caddyserver.com) installed and
 
 ```console
 $ cd slides
-$ caddy
+$ caddy run
 ```
 
 Press `f` to enter full screen.
