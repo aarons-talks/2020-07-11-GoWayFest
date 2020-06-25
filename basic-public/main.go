@@ -37,5 +37,5 @@ func main() {
 	router.GET("/", mainHandler(string(homeTpl)))
 	router.GET("/cats", catHandler(string(imgTpl)))
 	router.GET("/dogs", dogHandler(string(imgTpl)))
-	router.Run(":8080")
+	router.Run(":8081")
 }

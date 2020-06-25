@@ -1,4 +1,4 @@
-# GoDays 2020 Private Code Demo
+# GoWayFest 2020 Private Code Demo
 
 This is similar to the [basic public code demo](../basic-public), except that it uses a private repository as one of its dependencies: [`github.com/arschles/godays2020private`](https://github.com/arschles/godays2020private).
 
@@ -24,6 +24,8 @@ Finally, clear your local modules disk cache and build run the server, just as y
 $ sudo rm -rf $(go env GOPATH)/pkg/mod
 $ go run .
 ```
+
+After the server runs, you'll be able to see it on [localhost:8081](http://localhost:8081)
 
 ## Other Notes
 

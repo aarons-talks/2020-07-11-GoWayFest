@@ -6,7 +6,7 @@ The cool part though? Instead of pulling all my webapp's dependencies directly f
 
 In fact, we're actually gonna do the build in two different ways! We'll talk about each as we go. I developed and tested this demo on a Zsh shell on MacOS.
 
->I gave this demo at [GoDays 2020](https://www.godays.io/conferenceday1) in the session titled "How to Safely and Efficiently Build your App with Modules".
+>I gave this demo at [GoWayFest 2020](https://goway.io/) in the session titled "How to Safely and Efficiently Build your App with Modules".
 
 ![athens banner](./athens-banner.png)
 
@@ -41,10 +41,22 @@ $ go run .
 You'll see some output that looks like this:
 
 ```console
+go: downloading github.com/gobuffalo/plush v3.8.3+incompatible
 go: downloading github.com/gin-gonic/gin v1.4.0
+go: downloading github.com/pkg/errors v0.8.1
+go: downloading github.com/gobuffalo/helpers v0.4.0
+go: downloading github.com/gobuffalo/github_flavored_markdown v1.1.0
+go: downloading github.com/mattn/go-isatty v0.0.7
+go: downloading github.com/gin-contrib/sse v0.0.0-20190301062529-5545eab6dad3
+go: downloading github.com/golang/protobuf v1.3.1
+go: downloading golang.org/x/net v0.0.0-20190620200207-3b0461eec859
+go: downloading github.com/ugorji/go v1.1.4
+<...>
 ```
 
 This is the go tool downloading dependencies from `proxy.golang.org`. After the downloading steps, it extracts the code (it's downloaded as zip files) and then verifies the checksums with the `go.sum` file.
+
+After the server runs, you'll be able to see it on [localhost:8081](http://localhost:8081)
 
 # Keep on rockin', Gophers!
 

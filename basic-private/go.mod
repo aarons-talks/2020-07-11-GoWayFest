@@ -1,4 +1,4 @@
-module github.com/aarons-talks/2019-10-21-GoLab
+module github.com/aarons-talks/2020-07-11-GoWayFest
 
 go 1.13
 

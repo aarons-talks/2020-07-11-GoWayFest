@@ -1,4 +1,4 @@
-# GoDays 2020 Private Code Demo
+# GoWayFest 2020 Private Code Demo
 
 This is similar to the [basic private code demo](../basic-private), except that it uses [Athens](https://docs.gomods/io) to host _all_ of the code that we need, including the [private module](https://github.com/arschles/godays2020private) that we need.
 
@@ -66,6 +66,8 @@ $ docker run \
     -v $ATHENS_ARCHIVE:/athens \
     gomods/athens:v0.7.1
 ```
+
+After the server runs, you'll be able to see it on [localhost:8081](http://localhost:8081)
 
 >Notice how we don't need `ATHENS_GITHUB_TOKEN` and `ATHENS_GONOSUM_PATTERNS`. This is because neither Athens nor the client `go` CLI will ever need to fetch _new_ code - and so it won't need to use a GitHub token or verify new checksums. All code and metadata originates from the Athens archive.
 
