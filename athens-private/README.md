@@ -64,7 +64,7 @@ $ docker run \
     -e ATHENS_STORAGE_TYPE=disk \
     -e ATHENS_DISK_STORAGE_ROOT=/athens \
     -v $ATHENS_ARCHIVE:/athens \
-    gomods/athens:v0.7.1
+    gomods/athens:v0.9.0
 ```
 
 After the server runs, you'll be able to see it on [localhost:8081](http://localhost:8081)
