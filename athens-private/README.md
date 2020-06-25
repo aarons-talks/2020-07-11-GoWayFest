@@ -31,8 +31,8 @@ You'll need to set up the local environment to fetch all modules from Athens (no
 In a new terminal window, run these commands to do your setup:
 
 ```console
-$ go env -w GOPROXY=http://localhost:3000
-$ go env -w GONOSUMDB=github.com/arschles/godays2020private
+$ export GOPROXY=http://localhost:3000
+$ export GONOSUMDB=github.com/arschles/godays2020private
 ```
 
 >`GOPROXY` tells the `go` tool to contact Athens for both module code and checksums. `GONOSUMDB` tells the `go` tool to contact Athens for checksums.
@@ -42,7 +42,7 @@ $ go env -w GONOSUMDB=github.com/arschles/godays2020private
 Now that you're all set up, make sure `GOPRIVATE` is not set, clear your cache and run the server in the same terminal window as the last step (just as you did in the [previous demo](../basic-private)):
 
 ```console
-$ go env -w GOPRIVATE=none
+$ export GOPRIVATE=none
 $ sudo rm -rf $(go env GOPATH)/pkg/mod
 $ go run .
 ```

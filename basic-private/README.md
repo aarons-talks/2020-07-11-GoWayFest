@@ -7,7 +7,7 @@ This new private repository provides a new `ImagesHandler` function that elimina
 In order to use it, we'll need to set a `GOPRIVATE` environment variable to tell the modules system to _not_ use `proxy.golang.org` to download this private repository:
 
 ```console
-$ go env -w GOPRIVATE=github.com/arschles/godays2020private
+$ export GOPRIVATE=github.com/arschles/godays2020private
 ```
 
 >Note: this will not work unless you have access to my repository! There's unfortunately no way (that I know of) to give read access to just this private repository. I recommend using a private repository of your own.
@@ -32,7 +32,7 @@ After the server runs, you'll be able to see it on [localhost:8081](http://local
 You can set this `GOPRIVATE` environment variable to a list and/or wildcard module names. For example:
 
 ```console
-$ go env -w GOPRIVATE="github.com/myprivate/*,github.com/otherprivate/*`
+$ export GOPRIVATE="github.com/myprivate/*,github.com/otherprivate/*`
 ```
 
 There are also `GONOPROXY` and `GOPRIVATE` environment variables.
