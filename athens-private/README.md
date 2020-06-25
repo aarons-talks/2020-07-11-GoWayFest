@@ -47,6 +47,9 @@ $ sudo rm -rf $(go env GOPATH)/pkg/mod
 $ go run .
 ```
 
+After the server runs, you'll be able to see it on [localhost:8081](http://localhost:8081)
+
+
 ## Bonus: Running Athens While Offline
 
 In this demo, Athens has used the default module database, which is stored on disk. You can pre-fill the Athens module database, which means that you can actually have a functioning development environment while not having access to the internet whatsoever.
