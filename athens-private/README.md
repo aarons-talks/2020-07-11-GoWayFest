@@ -17,7 +17,7 @@ $ docker run \
     -e ATHENS_GO_GET_WORKERS=5 \
     -e ATHENS_GONOSUM_PATTERNS="github.com/arschles/godays2020private" \
     -e ATHENS_GITHUB_TOKEN="$ATHENS_GITHUB_TOKEN" \
-    gomods/athens:v0.7.1
+    gomods/athens:v0.9.0
 ```
 
 >Make sure that the `ATHENS_GITHUB_TOKEN` environment variable is set to a [GitHub personal access token](https://github.com/settings/tokens) that has access to your private repository. I can't share mine for `github.com/arschles/godays2020private` because sadly I can't create a token with read access for just that repository.
