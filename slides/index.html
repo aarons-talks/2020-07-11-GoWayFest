@@ -57,18 +57,17 @@
 				</section>
 
 				<section>
-					<h2>How did we get here?</h2>
+					<h2>Evolution of Dependencies</h2>
 					
 					<p class="fragment"><code>nil</code></p>
 					<p class="fragment"><code>go get</code></p>
 					<p class="fragment"><code>GO15VENDOREXPERIMENT</code></p>
 					<p class="fragment"><code>glide</code>, <code>dep</code>, ...</p>
-					<p class="fragment"><b><code>go get</code></b></p>
-				</section>
-
-				<section>
-					<h2><code>go get</code> is new</h2>
-					<h4>... and standard</h4>
+					<p class="fragment">
+						<mark><code>
+							go get
+						</code></mark>
+					</p>
 				</section>
 
 				<section>
@@ -95,7 +94,10 @@
 						Everything uses <code>go</code>
 					</h2>
 					<p class="fragment">
-						With a deceivingly familiar workflow.
+						It has a <mark>deceivingly</mark> similar workflow ...
+					</p>
+					<p class="fragment">
+						... and it's the <mark>standard</mark> now.
 					</p>
 				</section>
 				
@@ -161,9 +163,9 @@
 
 				<section>
 					<h2>A basic build <small>(demo)</small></h2>
-					<h4>
+					<sub>
 						Your project with public dependencies
-					</h4>
+					</sub>
 
 					<aside class="notes">
 						Demo - see <code>basic-public/</code>
@@ -215,15 +217,16 @@
 				</section>
 
 				<section>
-					<h2>Your private code <small>(demo)</small></h2>
-					<p>
-						<code>proxy.golang.org</code>
-						and 
-						<code>sum.golang.org</code>
-					</p>
-					<p>
-						should not see private module names
-					</p>
+					<h2>Private Code?</h2>
+				</section>
+
+				<section>
+					<h3>
+						<p>
+							<code>go</code> <u>defaults</u> 
+							to using the public servers.
+						</p>
+					</h3>
 					<aside class="notes">
 						<p>
 							Public hosted servers don't hold
@@ -247,9 +250,25 @@
 				</section>
 
 				<section>
-					<h2>Using a private server <small>(demo)</small></h2>
-					<p>
-						Own your shared <code>vendor</code>
+					<h2>
+						Your private code <small>(demo)</small>
+					</h2>
+					<sub>
+						Code being fetched from multiple
+						sources.
+					</sub>
+				</section>
+
+				<section>
+					<h2>Own Your Storage</h2>
+					<p class="fragment">
+						Insulate against changes
+					</p>
+					<p class="fragment">
+						All dependencies onsite (firewall)
+					</p>
+					<p class="fragment">
+						Auditability
 					</p>
 					<aside class="notes">
 						<p>
@@ -276,34 +295,57 @@
 				</section>
 
 				<section>
+					<h2>Using a private server <small>(demo)</small></h2>
+					<sub>
+						All code in a private database
+					</sub>
+				</section>
+
+				<section>
 					<h1>Things to remember</h1>
+				</section>
+
+				
+				<section>
+					<p>
+						Shared Vendor Folder
+					</p>
+					<p>
+						Fast, dependable builds
+					</p>
+					<p>
+						Increased security
+					</p>
+					<p>
+						...
+					</p>
+
+					</h2>
 				</section>
 
 				<section>
 					<h2>
-						A fundamental change
-						<small>(under the hood)</small>
+						You must override defaults
+					</h2>
+					<h2>
+						for private repositories.
 					</h2>
 					<aside class="notes">
 						<p>
-							Easily configurable
-						</p>
-						<p>
-							Dangerous for private dependencies, by default
+							The defaults are optimized
+							for speed, reliability, and security
+							for completely <u>public</u> codebases
 						</p>
 					</aside>
 				</section>
+
 				<section>
-					<h2>Increased security</h2>
-					<p class="fragment">
-						With higher complexity
-					</p>
-				</section>
-				<section>
-					<h2>Private code</h2>
-					<p class="fragment">
-						You must overwrite defaults
-					</p>
+					<h2>
+						Run your own server
+					</h2>
+					<h2>
+						for larger teams.
+					</h2>
 					<aside class="notes">
 						<p>
 							If you have more than a few developers,
@@ -319,16 +361,12 @@
 						</p>
 					</aside>
 				</section>
+
 				<section>
 					<h2>
 						More Reading
 					</h2>
-					<p class="fragment">
-						GONOPROXY,
-						GONOSUMDB,
-						GOPRIVATE
-					</p>
-					<p class="fragment">
+					<p>
 						<code>go help module-private</code>
 					</p>
 					<p class="fragment">

@@ -30,7 +30,7 @@ func main() {
 	defer imgFP.Close()
 	imgTpl, err := ioutil.ReadAll(imgFP)
 	if err != nil {
-		log.Fatalf("Error eading image template: %s", err)
+		log.Fatalf("Error reading image template: %s", err)
 	}
 	defer imgFP.Close()
 	router.Static("/static", "./static")

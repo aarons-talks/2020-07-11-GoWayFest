@@ -8,7 +8,10 @@ To see slides, make sure you have [caddy](https://caddyserver.com) installed and
 $ cd slides
 $ caddy run
 ```
-Slides will be running on http://localhost:8080. Press `f` to enter full screen.
+
+Slides will be running on http://localhost:8080.
+
+>Press `f` to enter full screen, of if you're on some browsers on Windows, including Microsoft Edge, press `F11` instead.
 
 ## Todo before demos
 
